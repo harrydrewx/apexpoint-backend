@@ -22,7 +22,7 @@ app.post("/apply", async (req, res) => {
     await transporter.sendMail({
       from: email,
       to: process.env.EMAIL_USER,
-      subject: New Application from ${name},
+      subject: 'New Application from ${name}',
       text: message,
     });
 
